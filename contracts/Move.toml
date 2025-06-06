@@ -1,0 +1,11 @@
+[package]
+name = "bountyboard_contracts"
+version = "0.0.1"
+edition = "2024.beta"  # Use the latest supported edition for method syntax
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "devnet" }
+
+[addresses]
+bountyboard_contracts = "0x0"  # Assign a value to your named address
+sui = "0x2"                    # (optional, but common for Sui projects)
